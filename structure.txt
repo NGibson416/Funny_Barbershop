@@ -1,0 +1,35 @@
+                background
+1 image = barbershop poles or identifiable marker 
+              12x12 gridbox           
+                header
+  5 images = a barber shop layout + my logo + social media icons
+                navbar
+    horizontal + vertical + click scroll
+                upper body
+  3 images = short, mid & long hair examples + prices of our haircuts
+                mid body
+    2 images = 1 haircut + 1 celebrity haircut
+                lower body
+  3 images = 1 of our barbers that does animal haircuts + 2 animals
+                about
+    1 image = My great great great grandfather's great great grandfather Sir Ignoramus The 3rd, "The Patron Fellow Debutante Of Worcestershire"
+                contact
+  Contact form + our phone# + a therapy hotline # if they don't want to fill out a form
+                footer
+      © all rights reserved
+}
+
+upper body
+buzz cuts, fades, long hair
+
+mid body
+stying, beards
+
+lower body
+coolio home visits, graduation specials, cats,
+
+about
+Sir Ignoramus my great great great grandfathers great great grandfather
+}
+
+changed quite a bit but I will keep this blueprint to remember my original idea.

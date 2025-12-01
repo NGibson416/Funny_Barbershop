@@ -1,0 +1,655 @@
+/* MINIMALISTIC BARBERSHOP CSS - UNDER 500 LINES */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+scroll-behavior: smooth;
+}
+
+/* 12 COLUMN GRID SYSTEM - MANDATORY REQUIREMENT */
+#grid {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: minmax(150px, auto);
+grid-template-areas:
+"hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+"abt abt abt abt abt abt abt abt abt abt abt abt"
+"skl skl skl skl skl skl skl skl skl skl skl skl"
+"gal gal gal gal gal gal gal gal gal gal gal gal"
+"prj prj prj prj prj prj prj prj prj prj prj prj"
+"con con con con con con con con con con con con"
+"ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+}
+
+#upper {
+grid-area: hdr;
+}
+
+#mid {
+grid-area: abt;
+}
+
+#lower {
+grid-area: skl;
+}
+
+#about {
+grid-area: gal;
+}
+
+#contact {
+grid-area: con;
+}
+
+/* COLOR SCHEMES */
+.brown {
+background-color: #8B4513;
+color: white;
+}
+/* standard cuts */
+.white {
+background-color: rgb(242, 239, 239);
+color: black;
+}
+/* navbar */
+.red {
+background-color: #ad1936;
+color: white;
+}
+/* styled cuts */
+.blue {
+background-color: #38519b;
+color: white;
+}
+/* about */
+.black {
+background-color: rgb(22, 21, 21);
+color: white;
+}
+
+/* SECTIONS */
+.section {
+min-height: 100vh;
+padding: 40px;
+position: relative;
+}
+
+.section h1 {
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 40px;
+border: 3px solid #8B4513;
+padding: 20px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+/* IMAGES */
+.section-img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+border: 2px solid #8B4513;
+}
+
+/* SPECIFIC IMAGE: Dumb-Haircut-11.jpg */
+.section-img-11 {
+width: 200px;
+height: 200px;
+object-fit: cover;
+position: relative;
+clip-path: inset(2px 10px 5px 5px);
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+border: 2px solid #8B4513;
+}
+
+/* Main Barber LOGO IN BACKGROUND SECTION */
+.main-logo {
+width: 300px;
+height: 300px;
+object-fit:contain ;
+border-radius: 70px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+border: 2px solid #8B4513;
+margin-top: 10px;
+background-color: white;
+background-size: 500px 500px;
+padding-top: 0px;
+/*I give up trying to make my logo bigger*/
+}
+
+/* ZIG-ZAG LAYOUTS FOR UPPER SECTION */
+.img-left {
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+gap: 20px;
+}
+
+.img-left p {
+flex: 1;
+font-size: 1.1rem;
+line-height: 1.6;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+.img-right {
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+gap: 20px;
+flex-direction: row-reverse;
+}
+
+.img-right p {
+flex: 1;
+font-size: 1.1rem;
+line-height: 1.6;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+/* STAIRCASE LAYOUTS FOR MID SECTION */
+.img-indent-1 {
+display: flex;
+align-items: center;
+margin-left: 10px;
+margin-bottom: 40px;
+gap: 20px;
+}
+
+.img-indent-1 p {
+flex: 1;
+font-size: 1.1rem;
+line-height: 1.6;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+.img-indent-2 {
+display: flex;
+align-items: center;
+margin-left: 250px;
+margin-bottom: 40px;
+gap: 20px;
+}
+
+.img-indent-2 p {
+flex: 1;
+font-size: 1.1rem;
+line-height: 1.6;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+.img-indent-3 {
+display: flex;
+align-items: center;
+margin-left: 500px;
+margin-bottom: 30px;
+gap: 20px;
+}
+
+.img-indent-3 p {
+flex: 1;
+font-size: 1.1rem;
+line-height: 1.6;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+/* CENTERED ABOUT STYLE */
+.about-centered {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 20px;
+}
+                        /*Friar*/
+.about-img {
+width: 200px;
+height: 200px;
+object-fit: contain;
+border-radius: 8px;
+object-position: -1px center;
+}
+
+.about-centered p {
+font-size: 1.1rem;
+line-height: 1.8;
+text-align: center;
+border: 2px solid #8B4513;
+padding: 20px;
+background-color: rgba(139, 69, 19, 0.1);
+max-width: 800px;
+}
+               /*social media icons*/
+.social {
+font-size: 1.1rem;
+border: 2px solid #8B4513;
+padding: 10px;
+background-color: lab(16.28% 14.91 20.93);
+display: flex;
+align-items: center;
+gap: 2px;
+margin-left: auto;
+margin-right: -10px;
+padding-right: 1px;
+}
+
+.social a {
+text-decoration: none;
+display: inline-block;
+line-height: 0;
+cursor: pointer;
+}
+
+.social-icon {
+width: 40px;
+height: 40px;
+object-fit: contain;
+border-radius: 3px;
+transition: transform 0.3s ease;
+}
+
+.signature-logo {
+width: 110px;
+height: 110px;
+object-fit: contain;
+border-radius: 3px;
+margin-left: -10px;
+}
+
+.social-icon:hover {
+transform: scale(1.1);
+}
+
+/* BACKGROUND SECTION */
+.background {
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+position: relative;
+}
+
+.background h1 {
+font-size: 3rem;
+margin-bottom: 10px;
+}
+
+.background p {
+font-size: 1.5rem;
+font-style: italic;
+}
+
+.background .header-logo {
+position: absolute;
+bottom: 20px;
+left: 20px;
+}
+
+.background .social {
+position: absolute;
+bottom: 20px;
+right: 20px;
+margin-left: 0;
+z-index: 10;
+}
+
+/* NAVIGATION */
+.navbar {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.navbar a {
+color: inherit;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1rem;
+border: 2px solid #8B4513;
+padding: 10px 15px;
+background-color: rgba(139, 69, 19, 0.2);
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+background-color: rgba(139, 69, 19, 0.4);
+}
+
+.scroll-buttons {
+display: flex;
+gap: 10px;
+}
+
+.scroll-buttons button {
+background-color: #8B4513;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 50%;
+cursor: pointer;
+font-size: 1rem;
+transition: all 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+background-color: #A0522D;
+transform: scale(1.1);
+}
+
+/* CONTACT FORM */
+.contact-form {
+max-width: 500px;
+margin: 0 auto 40px auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+border: 3px solid #8B4513;
+padding: 30px;
+background-color: rgba(139, 69, 19, 0.1);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+padding: 12px;
+border: 2px solid #8B4513;
+border-radius: 5px;
+font-size: 1rem;
+background-color: rgba(255,255,255,0.9);
+}
+
+.contact-form button {
+padding: 15px;
+background-color: #8B4513;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 1.1rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #A0522D;
+transform: translateY(-2px);
+}
+
+.contact-info {
+text-align: center;
+border: 2px solid #8B4513;
+padding: 20px;
+background-color: rgba(139, 69, 19, 0.1);
+max-width: 500px;
+margin: 0 auto;
+}
+
+.contact-info p {
+margin-bottom: 10px;
+font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+text-align: center;
+padding: 30px;
+border-top: 3px solid #8B4513;
+}
+
+.footer p {
+font-size: 1.1rem;
+border: 2px solid #8B4513;
+padding: 15px;
+background-color: rgba(139, 69, 19, 0.1);
+display: inline-block;
+}
+                              /*EVERYTIME I FORGET TO DO ABSOLUTE POSITION! REMEMBER ABSOLUTE POSITION! LOL*/
+
+                    /*this is the problemo*/
+/* MOBILE SIDEBAR */
+.mobile-menu-btn {
+display: none;
+position: absolute !important;
+top: 10px !important;
+left: 10px !important;
+z-index: 9999;
+background-color: #8B4513;
+color: white;
+border: none;
+padding: 12px 18px;
+font-size: 20px;
+border-radius: 5px;
+cursor: pointer;
+box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+                    /*this section is the problemo*/
+
+/* Logos inside sidebar */
+.sidebar {
+display: none;
+position: fixed;
+top: 0;
+left: -300px;
+width: 140px;
+height: 100vh;
+background-color: #8B4513;
+z-index: 1000;
+transition: left 0.3s ease;
+margin-top: 55px;
+}
+
+.sidebar.active {
+left: 0;
+}
+
+.sidebar-close {
+position: absolute;
+top: 15px;
+right: 20px;
+background: none;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+                  /*everything below is coooo*/
+.sidebar-content {
+padding: 60px 20px 20px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+align-items: center;
+}
+
+.sidebar-logo {
+text-align: center;
+}
+
+.sidebar-signature-logo {
+width: 80px;
+height: 80px;
+object-fit: contain;
+border-radius: 3px;
+margin-bottom: 10px;
+}
+
+.sidebar-logo p {
+color: white;
+font-size: 1rem;
+}
+                  /*notouchy*/
+.sidebar-social {
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+}
+                     /*no need to touch*/
+.sidebar-social-icon {
+width: 50px;
+height: 50px;
+object-fit: contain;
+border-radius: 3px;
+transition: transform 0.3s ease;
+}
+
+.sidebar-social-icon:hover {
+transform: scale(1.1);
+}
+
+                           /* do not touch*/
+/* Mobile Sidebar - Tablets and Smaller */
+@media (max-width: 800px) {
+.background .header-logo,
+.background .social {
+display: none !important;
+}
+
+.mobile-menu-btn {
+display: block;
+}
+
+.sidebar {
+display: block;
+}
+
+.background {
+padding-top: 70px;
+}
+}
+
+/* Medium Screens - Standard Responsive */
+@media (max-width: 768px) {
+.section {
+padding: 20px;
+}
+
+.section h1 {
+font-size: 2rem;
+}
+
+.img-left,
+.img-right,
+.img-indent-1,
+.img-indent-2,
+.img-indent-3 {
+flex-direction: column;
+margin-left: 0;
+align-items: center;
+text-align: center;
+}
+
+.social {
+margin-left: 0;
+margin-top: 15px;
+}
+
+.navbar {
+flex-direction: column;
+}
+
+.scroll-buttons {
+order: 1;
+margin-top: 15px;
+}
+
+.background h1 {
+font-size: 2rem;
+}
+}
+
+/* RESPONSIVE DESIGN */
+/* Tablet/Medium Screens - Fix Styled Sections Layout */
+@media (max-width: 900px) {
+.img-indent-1,
+.img-indent-2,
+.img-indent-3 {
+margin-left: 20px !important;
+margin-right: 20px !important;
+flex-direction: row;
+align-items: center;
+gap: 15px;
+}
+
+.img-indent-1 {
+margin-bottom: 20px;
+}
+
+.img-indent-2 {
+margin-left: 40px !important;
+margin-bottom: 20px;
+}
+
+.img-indent-3 {
+margin-left: 60px !important;
+margin-bottom: 20px;
+}
+
+.img-indent-1 p,
+.img-indent-2 p,
+.img-indent-3 p {
+flex: 1;
+min-width: 200px;
+font-size: 1rem;
+line-height: 1.5;
+}
+
+.img-indent-1 img,
+.img-indent-2 img,
+.img-indent-3 img {
+flex-shrink: 0;
+min-width: 180px;
+}
+}
+
+/* Small Screens - Stack Styled Sections Vertically */
+@media (max-width: 600px) {
+.img-indent-1,
+.img-indent-2,
+.img-indent-3 {
+flex-direction: column !important;
+margin-left: 10px !important;
+margin-right: 10px !important;
+align-items: center;
+text-align: center;
+gap: 15px;
+}
+
+.img-indent-1 p,
+.img-indent-2 p,
+.img-indent-3 p {
+min-width: unset;
+width: 100%;
+}
+
+.img-indent-1 img,
+.img-indent-2 img,
+.img-indent-3 img {
+min-width: unset;
+width: 200px;
+}
+}
